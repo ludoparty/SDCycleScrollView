@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2855D875278E7F1B00BE764F /* SDCycleRTLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2855D874278E7F1B00BE764F /* SDCycleRTLManager.m */; };
 		48377B901C1027F5007B8C21 /* DemoVCWithXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */; };
 		48377B911C1027F5007B8C21 /* DemoVCWithXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */; };
 		4855B1941B09CBA500AA0788 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855B1931B09CBA500AA0788 /* placeholder@2x.png */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2855D873278E7F1B00BE764F /* SDCycleRTLManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDCycleRTLManager.h; sourceTree = "<group>"; };
+		2855D874278E7F1B00BE764F /* SDCycleRTLManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCycleRTLManager.m; sourceTree = "<group>"; };
 		48377B8D1C1027F5007B8C21 /* DemoVCWithXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVCWithXib.h; sourceTree = "<group>"; };
 		48377B8E1C1027F5007B8C21 /* DemoVCWithXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVCWithXib.m; sourceTree = "<group>"; };
 		48377B8F1C1027F5007B8C21 /* DemoVCWithXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoVCWithXib.xib; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 				990141091AC9420E00D0D74F /* UIView+SDExtension.h */,
 				9901410A1AC9420E00D0D74F /* UIView+SDExtension.m */,
 				99E7B30B1AC11F1C009F9A2E /* PageControl */,
+				2855D873278E7F1B00BE764F /* SDCycleRTLManager.h */,
+				2855D874278E7F1B00BE764F /* SDCycleRTLManager.m */,
 			);
 			path = SDCycleScrollView;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -399,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2855D875278E7F1B00BE764F /* SDCycleRTLManager.m in Sources */,
 				9900D17A1ABEB2490077A6CB /* ViewController.m in Sources */,
 				990141031AC941FD00D0D74F /* TADotView.m in Sources */,
 				990141011AC941FD00D0D74F /* TAAbstractDotView.m in Sources */,

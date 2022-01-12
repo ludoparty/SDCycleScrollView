@@ -35,6 +35,7 @@
 #import "TAPageControl.h"
 #import "SDWebImageManager.h"
 #import "UIImageView+WebCache.h"
+#import "SDCycleRTLManager.h"
 
 #define kCycleScrollViewInitialPageControlDotSize CGSizeMake(10, 10)
 
@@ -137,6 +138,10 @@ NSString * const ID = @"SDCycleScrollViewCell";
     _flowLayout = flowLayout;
     
     UICollectionView *mainView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flowLayout];
+    if ([SDCycleRTLManager supportRTL]) {
+        mainView.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
+        [SDCycleRTLManager horizontalFlipView:mainView];
+    }
     mainView.backgroundColor = [UIColor clearColor];
     mainView.pagingEnabled = YES;
     mainView.showsHorizontalScrollIndicator = NO;
@@ -425,6 +430,13 @@ NSString * const ID = @"SDCycleScrollViewCell";
     }
     if (self.pageDotImage) {
         self.pageDotImage = self.pageDotImage;
+    }
+    
+    if (_pageControl) {
+        if ([SDCycleRTLManager supportRTL]) {
+            _pageControl.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
+            [SDCycleRTLManager horizontalFlipView:_pageControl];
+        }
     }
 }
 

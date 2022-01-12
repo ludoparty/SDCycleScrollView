@@ -32,6 +32,7 @@
 
 #import "SDCollectionViewCell.h"
 #import "UIView+SDExtension.h"
+#import "SDCycleRTLManager.h"
 
 @implementation SDCollectionViewCell
 {
@@ -42,6 +43,8 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+        [SDCycleRTLManager horizontalFlipViewIfNeeded:self];
+        [SDCycleRTLManager horizontalFlipViewIfNeeded:self.contentView];
         [self setupImageView];
         [self setupTitleLabel];
     }
